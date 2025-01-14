@@ -8,6 +8,6 @@ export type userDataType = {
 export type GlobalContextType = {
     userData: userDataType[],
     setUserData: React.Dispatch<React.SetStateAction<userDataType[]>>,
-    makeNewColumn: Boolean,
-    setMakeNewColumn: React.Dispatch<React.SetStateAction<Boolean>>
+    makeNewColumn: boolean,
+    setMakeNewColumn: React.Dispatch<React.SetStateAction<boolean>>
 }

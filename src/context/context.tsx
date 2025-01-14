@@ -5,14 +5,14 @@ export const GlobalContext = createContext<GlobalContextType | undefined>(undefi
 
 export const GlobalContextProvider = ({children}:{children:ReactNode})=>{
 
-    const userDataTemplate = [{
-        id: '',
-        title: '',
-        data: []
-    }]
+    // const userDataTemplate = [{
+    //     id: '',
+    //     title: '',
+    //     data: []
+    // }]
 
     const [userData, setUserData] = useState<userDataType[]>([])
-    const [makeNewColumn, setMakeNewColumn] = useState<Boolean>(true);
+    const [makeNewColumn, setMakeNewColumn] = useState<boolean>(true);
 
 
     return (<GlobalContext.Provider value={{userData, setUserData, makeNewColumn,setMakeNewColumn}}>

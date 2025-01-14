@@ -1,4 +1,4 @@
-import {useState, useRef} from 'react'
+import {useState} from 'react'
 import { userDataType } from '@/type/types'
 import {
     Dialog,
@@ -6,12 +6,11 @@ import {
     DialogDescription,
     DialogHeader,
     DialogTitle,
-    DialogTrigger,
     DialogFooter
   } from "@/components/ui/dialog"
   import { Input } from "@/components/ui/input"
   import { Button } from '@/components/ui/button'
-// import { Button } from '@/components/ui/button'
+
 
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 

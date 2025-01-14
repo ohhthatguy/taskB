@@ -2,7 +2,7 @@
     //thakullabhasakr456@gmail.com
 
 
-import {useContext, useState, useRef} from 'react'
+import {useContext, useRef} from 'react'
 import {GlobalContext} from "../context/context"
 import {
     Dialog,
@@ -64,7 +64,7 @@ const Home = () => {
     <div className=' w-full h-screen'>
 
         
-        <Dialog open={userData?.makeNewColumn} onOpenChange={()=>userData?.setMakeNewColumn(!userData.makeNewColumn)}>
+        <Dialog open={userData ? userData.makeNewColumn : undefined} onOpenChange={()=>userData?.setMakeNewColumn(!userData.makeNewColumn)}>
             <DialogTrigger >
                 
                     <Button variant="outline" className='bg-slate-200'>make new column</Button></DialogTrigger>
